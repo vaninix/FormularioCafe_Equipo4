@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de formulario HTML5</title>
+    <link rel="stylesheet" href="estilo.css"/>
+    <meta charset="utf-8"/>
+</head>
+<body>
+    <div class="outer-container">
+        <img src="logo.png" alt="logo" class="logo">
+        <h1 class="title">Café Splendide</h1>
+        <p class="subtitle">Por favor, rellene la información con sus datos correspondientes para poder realizar un buen pedido.</p>
+        <div class="inner-container">
+            <form method="post" action="segunda.php" class="form">
+                <label for="txtNombre" class="input-label">Nombre:</label>
+                <input type="text" id="txtNombre" name="txtNombre" autofocus required class="input-field"/><br/>
+                <br>
+                <label for="bebida" class="input-label">Bebida:</label> 
+                <select id="bebida" name="txtOpc1" class="input-field"> 
+                    <option value="Ninguno">Ninguno</option>
+                    <option value="Café Espresso">Café Espresso</option>
+                    <option value="Café Americano">Café Americano</option>
+                    <option value="Cappuccino">Cappuccino</option>
+                    <option value="Macchiato">Macchiato</option>
+                    <option value="Mocha">Mocha</option>
+                    <option value="Café con Leche">Café con Leche</option>
+                    <option value="Flat White">Flat White</option>
+                    <option value="Cold Brew">Cold Brew</option>
+                    <option value="Frappé de Café Clásico">Frappé de Café Clásico</option>
+                    <option value="Frappé Mocha">Frappé Mocha</option>
+                    <option value="Frappé de Caramelo">Frappé de Caramelo</option>
+                    <option value="Frappé de Vainilla">Frappé de Vainilla</option>
+                    <option value="Frappé de Menta">Frappé de Menta</option>
+                    <option value="Frappé de Chocolate Blanco">Frappé de Chocolate Blanco</option>
+                    <option value="Frappé de Tiramisú">Frappé de Tiramisú</option>
+                    <option value="Frappé de Caramelo Salado">Frappé de Caramelo Salado</option>
+                    <option value="Frappé de Avellana">Frappé de Avellana</option>
+                    <option value="Frappé de Moca Blanco">Frappé de Moca Blanco</option>
+                </select>                
+                <br>
+                <br>
+                <label for="tamaño" class="input-label">Tamaño:</label> 
+                <select id="tamaño" name="txtOpc2" class="input-field"> 
+                    <option value="Chico">Chico</option>
+                    <option value="Mediano">Mediano</option>
+                    <option value="Grande">Grande</option>
+                    <option value="Extra Grande">Extra Grande</option>
+                </select><br/>
+                <br>
+                <label for="txtColor" class="input-label">Color de vaso:</label>
+                <input type="color" id="txtColor" name="txtColor" class="input-field"/><br/>
+                <br>
+                <label for="txtAzucar" class="input-label">Sobres de Azucar:</label>
+                <input type="number" id="txtAzucar" name="txtAzucar" min="1" max="5" class="input-field"/><br/>
+                <br>
+                <label for="txtCrema" class="input-label">Sobres de Crema:</label>
+                <input type="number" id="txtCrema" name="txtCrema" min="1" max="5" class="input-field"/><br/>
+                <br>
+                <label for="Postre" class="input-label">Postre:</label>
+                <select id="Postre" name="txtPostre" class="input-field">
+                    <option value="Ninguno">Ninguno</option>
+                    <option value="Pastel de Frutas">Pastel de Frutas</option>
+                    <option value="Pastel de Chocolate">Pastel de Chocolate</option>
+                    <option value="Cheesecake">Cheesecake</option>
+                    <option value="Éclair">Éclair</option>
+                    <option value="Orden de Macarons">Orden de Macarons</option>
+                    <option value="Croissants">Croissants</option>
+                    <option value="Tiramisú">Tiramisú</option>
+                    <option value="Pastel de Manzana">Pastel de Manzana</option>
+                    <option value="Profiteroles">Profiteroles</option>
+                    <option value="Pastel de Zanahoria">Pastel de Zanahoria</option>
+                </select><br/>
+                <br>
+                <label for="txtCorreo" class="input-label">Correo Para Factura:</label>
+                <input type="email" id="txtCorreo" name="txtCorreo" class="input-field"/><br/>
+                <br>            
+                <input type="submit" value="Enviar" class="btn"/>
+            </form>
+        </div>
+        
+    </body>
+</html>
